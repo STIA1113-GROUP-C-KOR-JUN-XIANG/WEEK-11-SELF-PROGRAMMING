@@ -7,7 +7,6 @@ public class LargestElement_2 {
 		Scanner sc = new Scanner(System.in);
         
         double[] sales = new double[5];
-        //double sales[] = {10.00, 20.00, 50.00, 40.00, 30.00};
         int index, maxIndex;
         double largestSale;
         
