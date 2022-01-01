@@ -1,0 +1,44 @@
+package SelfProgramming;
+
+import java.util.Scanner;
+
+import javax.swing.JList;
+
+public class ScannerSumTwoArray1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int row,col;
+		System.out.print("Enter the size of row of array:");
+		row = sc.nextInt();
+		System.out.print("Enter the size of column of array:");
+		col = sc.nextInt();
+		int [][] list = new int[row][col];
+		int X = row*col;
+		System.out.println("Enter value for "+X+" elements:");
+		for(row=0; row<list.length; row++)
+		{
+			for(col=0; col<list[row].length; col++) 
+			{
+			list[row][col]=sc.nextInt();
+			}
+		}
+		int totalsum=0;
+		for(int x=0; x<row; x++)
+		{
+			int sum=0;
+			for(int y=0; y<col; y++)
+			{
+				System.out.print(list[x][y]+" + ");
+				sum+=list[x][y];
+			}
+			totalsum+=sum;
+			System.out.println();
+			System.out.println("Sum :"+sum);
+			System.out.println("Total sum :"+totalsum);
+		}
+
+	}
+
+}
