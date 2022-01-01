@@ -1,0 +1,31 @@
+Enter twelve element: 
+2
+56
+98
+1
+2
+56
+35
+65
+49
+65
+65
+23
+2
+56
+98
+Sum :156
+
+1
+2
+56
+Sum :59
+
+35
+65
+49
+Sum :149
+
+The largest element of row1 = 98
+The largest element of row2 = 56
+The largest element of row3 = 65
