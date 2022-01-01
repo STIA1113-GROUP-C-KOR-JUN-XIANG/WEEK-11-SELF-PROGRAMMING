@@ -1,0 +1,34 @@
+package myArray;
+import java.util.Scanner;
+public class twoArray_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int row,col,sum,total;
+		int [][] list = new int[3][3];
+		System.out.println("Enter the nine element:");
+		for(row=0; row<list.length; row++)
+		{
+			for(col=0; col<list[row].length; col++) 
+			{
+			list[row][col]=sc.nextInt();
+			System.out.println("row: "+row+" column: "+col);
+			}
+		}
+		sum=0;
+		total=0;
+		for(int i=0; i<list.length; i++)
+		{
+			for(int j=0; j<list.length; j++)
+			{
+				System.out.println(list[i][j]);
+				sum+=list[i][j];
+			}
+			total=total+sum;
+			System.out.println("Print sum :"+sum);
+			System.out.println("Print total sum :"+total);
+		}
+	}
+
+}
